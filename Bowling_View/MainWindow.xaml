@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bowling_View"
         mc:Ignorable="d"
-        Title="Bowling Shiz"
+        Title="Bowling SW"
         Height="450"
         Width="800"
         FontFamily="Arial"
@@ -18,33 +18,41 @@
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition/>
+                <RowDefinition Height="auto"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0"
-                       Text="Luke's Bowling SW"
+                       Text="Bowling SW"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"
                        FontSize="24"
                        FontWeight="Bold"/>
-            <Button Grid.Row="1"
+            <Line Grid.Row="1"
+                  Stroke="Black"
+                  StrokeThickness="5"
+                  X1="0"
+                  X2="300"
+                  Y1="0"
+                  Y2="0"/>
+            <Button Grid.Row="2"
                     Content="Players"
                     Style="{StaticResource RoundButton}"
                     Width="200"
                     Height="50"/>
-            <Button Grid.Row="2"
+            <Button Grid.Row="3"
                     Content="Teams"
                     Style="{StaticResource RoundButton}"
                     Width="200"
                     Height="50"/>
-            <Button Grid.Row="3"
+            <Button Grid.Row="4"
                     Content="Games"
                     Style="{StaticResource RoundButton}"
                     Width="200"
                     Height="50"/>
-            <Button Grid.Row="4"
+            <Button Grid.Row="5"
                     Content="Documents"
                     Style="{StaticResource RoundButton}"
                     Width="200"
